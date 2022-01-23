@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useFetch } from "../../hooks/useFetch";
 import { useState } from "react";
 
 // Styles
@@ -21,9 +22,14 @@ export default function Create() {
   const [exercises, setExercises] = useState([]);
   const exerciseInput = useRef(null);
 
+  const { postData, data, error } = useFetch(
+    "http://localhost:3000/workouts",
+    "POST"
+  );
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(title, about, experience, equipment, exercises);
+    postData({ title, exercises, rest, reps, experience, equipment, about });
   };
 
   const handleAdd = (e) => {

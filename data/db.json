@@ -1,64 +1,85 @@
 {
-    "workouts": [
-      {
-        "id": "1",
-        "title": "Total Body Workout",
-        "exercises": [
-          "Bench Press",
-          "Lying Tricep Extensions",
-          "Barbell Squats",
-          "Barbell Hip Thrusts",
-          "One-Arm Straight-Arm Pulldown"
-        ],
-        "rest": "60-90 seconds",
-        "reps": "10-12 RM",
-        "experience": "beginner",
-        "equipment": [
-            "Barbell",
-            "Squat Rack",
-            "Dumbbells",
-            "Bench",
-            "Cable Machine"
-          ],
-          "about": "Total body workouts are great for strength and conditioning. If you're a beginner, it's highly recommended that you start with a routine like this instead of seperating your days by muscle group."
-      },
-      {
-        "id": "2",
-        "title": "At Home Workout",
-        "exercises": [
-          "Pushups",
-          "Plank Walk Ups",
-          "Bodyweight Squats",
-          "Sprinter Lunges",
-          "Scissors"
-        ],
-        "rest": "60-90 seconds between sets",
-        "reps": "10-12 RM",
-        "experience": "intermediate",
-        "equipment": [
-            "None"
-          ],
-          "about": "Are you stuck in your home because of a global health crisis? Sure all the gyms are closed, but that doesn't mean you can't find a loophole! Introducing the at home workout, a great solution for staying in shape without equipment."
-      },
-      {
+  "workouts": [
+    {
+      "id": "1",
+      "title": "Total Body Workout",
+      "exercises": [
+        "Bench Press",
+        "Lying Tricep Extensions",
+        "Barbell Squats",
+        "Barbell Hip Thrusts",
+        "One-Arm Straight-Arm Pulldown"
+      ],
+      "rest": "60-90 seconds",
+      "reps": "10-12 RM",
+      "experience": "beginner",
+      "equipment": [
+        "Barbell",
+        "Squat Rack",
+        "Dumbbells",
+        "Bench",
+        "Cable Machine"
+      ],
+      "about": "Total body workouts are great for strength and conditioning. If you're a beginner, it's highly recommended that you start with a routine like this instead of seperating your days by muscle group."
+    },
+    {
+      "id": "2",
+      "title": "At Home Workout",
+      "exercises": [
+        "Pushups",
+        "Plank Walk Ups",
+        "Bodyweight Squats",
+        "Sprinter Lunges",
+        "Scissors"
+      ],
+      "rest": "60-90 seconds between sets",
+      "reps": "10-12 RM",
+      "experience": "intermediate",
+      "equipment": [
+        "None"
+      ],
+      "about": "Are you stuck in your home because of a global health crisis? Sure all the gyms are closed, but that doesn't mean you can't find a loophole! Introducing the at home workout, a great solution for staying in shape without equipment."
+    },
+    {
       "id": "3",
-        "title": "Leg Day",
-        "exercises": [
-          "Front Squat",
-          "Romanian Deadlift",
-          "Walking Lunges",
-          "Bulgarian Split Squat",
-          "Leg Press",
-          "Leg Curl"
-        ],
-        "rest": "60-90 seconds",
-        "reps": "10-12 RM",
-        "experience": "beginner",
-        "equipment": [
-            "Squat Rack",
-            "Bench"
-          ],
-          "about": "Leg day is notorious for being skipped, but that's what leads to people being built like chickens. Hitting legs is extremely important in your fitness journey, and should never be overlooked!"
-      }
-    ]
-  }
+      "title": "Leg Day",
+      "exercises": [
+        "Front Squat",
+        "Romanian Deadlift",
+        "Walking Lunges",
+        "Bulgarian Split Squat",
+        "Leg Press",
+        "Leg Curl"
+      ],
+      "rest": "60-90 seconds",
+      "reps": "10-12 RM",
+      "experience": "beginner",
+      "equipment": [
+        "Squat Rack",
+        "Bench"
+      ],
+      "about": "Leg day is notorious for being skipped, but that's what leads to people being built like chickens. Hitting legs is extremely important in your fitness journey, and should never be overlooked!"
+    },
+    {
+      "title": "Total Tyranny",
+      "exercises": [
+        "Push ups w/ extra weight",
+        "Barbell squats w/ metal chain",
+        "Heavy bag hits",
+        "Uphill treadmill sprints"
+      ],
+      "rest": "15 seconds",
+      "reps": "12-15",
+      "experience": "advanced",
+      "equipment": [
+        "Bench",
+        "Barbell",
+        "Metal chain",
+        "Boxing gloves",
+        "Heavy bag"
+      ],
+      "about": "This workout is not for the faint of heart. You have been warned.",
+      "id": "2tDD6sa"
+    }
+  ]
+}
