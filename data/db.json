@@ -12,6 +12,7 @@
         ],
         "rest": "60-90 seconds",
         "reps": "10-12 RM",
+        "experience": "beginner",
         "equipment": [
             "Barbell",
             "Squat Rack",
@@ -33,6 +34,7 @@
         ],
         "rest": "60-90 seconds between sets",
         "reps": "10-12 RM",
+        "experience": "intermediate",
         "equipment": [
             "None"
           ],
@@ -51,6 +53,7 @@
         ],
         "rest": "60-90 seconds",
         "reps": "10-12 RM",
+        "experience": "beginner",
         "equipment": [
             "Squat Rack",
             "Bench"
