@@ -41,3 +41,12 @@ textarea {
   text-align: center;
   margin: 40px auto;
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  padding-right: 2rem;
+  flex: 50%;
+}

@@ -19,6 +19,7 @@
   display: flex;
   padding: 0;
   margin-top: 0;
+  flex-wrap: wrap;
 }
 .workout li {
   list-style-type: none;
