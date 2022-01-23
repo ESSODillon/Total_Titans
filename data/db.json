@@ -1,0 +1,61 @@
+{
+    "workouts": [
+      {
+        "id": "1",
+        "title": "Total Body Workout",
+        "exercises": [
+          "Bench Press",
+          "Lying Tricep Extensions",
+          "Barbell Squats",
+          "Barbell Hip Thrusts",
+          "One-Arm Straight-Arm Pulldown"
+        ],
+        "rest": "60-90 seconds",
+        "reps": "10-12 RM",
+        "equipment": [
+            "Barbell",
+            "Squat Rack",
+            "Dumbbells",
+            "Bench",
+            "Cable Machine"
+          ],
+          "about": "Total body workouts are great for strength and conditioning. If you're a beginner, it's highly recommended that you start with a routine like this instead of seperating your days by muscle group."
+      },
+      {
+        "id": "2",
+        "title": "At Home Workout",
+        "exercises": [
+          "Pushups",
+          "Plank Walk Ups",
+          "Bodyweight Squats",
+          "Sprinter Lunges",
+          "Scissors"
+        ],
+        "rest": "60-90 seconds between sets",
+        "reps": "10-12 RM",
+        "equipment": [
+            "None"
+          ],
+          "about": "Are you stuck in your home because of a global health crisis? Sure all the gyms are closed, but that doesn't mean you can't find a loophole! Introducing the at home workout, a great solution for staying in shape without equipment."
+      },
+      {
+      "id": "3",
+        "title": "Leg Day",
+        "exercises": [
+          "Front Squat",
+          "Romanian Deadlift",
+          "Walking Lunges",
+          "Bulgarian Split Squat",
+          "Leg Press",
+          "Leg Curl"
+        ],
+        "rest": "60-90 seconds",
+        "reps": "10-12 RM",
+        "equipment": [
+            "Squat Rack",
+            "Bench"
+          ],
+          "about": "Leg day is notorious for being skipped, but that's what leads to people being built like chickens. Hitting legs is extremely important in your fitness journey, and should never be overlooked!"
+      }
+    ]
+  }
