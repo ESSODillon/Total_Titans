@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import "./WorkoutList.css";
 
 export default function WorkoutList({ workouts }) {
+  if (workouts.length == 0) {
+    return <div className="error">No workouts to load...</div>;
+  }
   return (
     <div className="workout-list">
       {workouts.map((workout) => (
