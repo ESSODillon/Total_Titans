@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Total_Titans/static/css/main.c87fcc27.css",
+    "main.js": "/Total_Titans/static/js/main.c631bb98.js",
+    "index.html": "/Total_Titans/index.html",
+    "main.c87fcc27.css.map": "/Total_Titans/static/css/main.c87fcc27.css.map",
+    "main.c631bb98.js.map": "/Total_Titans/static/js/main.c631bb98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c87fcc27.css",
+    "static/js/main.c631bb98.js"
+  ]
+}
