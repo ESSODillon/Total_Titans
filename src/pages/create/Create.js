@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useFetch } from "../../hooks/useFetch";
-import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 // Styles
 import "./Create.css";
@@ -26,6 +26,8 @@ export default function Create() {
     "http://localhost:3000/workouts",
     "POST"
   );
+
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,6 +61,14 @@ export default function Create() {
       exerciseInput.current.focus();
     }
   };
+
+  // Redirect the user when we get a data response
+
+  useEffect(() => {
+    if (data) {
+      history.push("/");
+    }
+  }, [data]);
 
   return (
     <div className="create">
