@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
+import { useTheme } from "../../hooks/useTheme";
 
 // Styles
 import "./Workout.css";
@@ -9,9 +10,10 @@ export default function Workout() {
   const { id } = useParams();
   const url = "http://localhost:3000/workouts/" + id;
   const { data: workout, isPending, error } = useFetch(url);
+  const { mode } = useTheme();
 
   return (
-    <div className="workout">
+    <div className={`workout ${mode}`}>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
       {workout && (

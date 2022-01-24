@@ -24,6 +24,7 @@ export default function Create() {
   const exerciseInput = useRef(null);
 
   const { color } = useTheme();
+  const { mode } = useTheme();
 
   const { postData, data, error } = useFetch(
     "http://localhost:3000/workouts",
@@ -74,7 +75,7 @@ export default function Create() {
   }, [data]);
 
   return (
-    <div className="create">
+    <div className={`create ${mode}`}>
       <h2 className="page-title">Add a New Workout</h2>
 
       <form onSubmit={handleSubmit}>
