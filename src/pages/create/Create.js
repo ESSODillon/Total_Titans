@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useFetch } from "../../hooks/useFetch";
 import { useHistory } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
+import { projectFirestore } from "../../firebase/config";
 
 // Styles
 import "./Create.css";
@@ -26,16 +26,18 @@ export default function Create() {
   const { color } = useTheme();
   const { mode } = useTheme();
 
-  const { postData, data, error } = useFetch(
-    "http://localhost:3000/workouts",
-    "POST"
-  );
-
   const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    postData({ title, exercises, rest, reps, experience, equipment, about });
+    const doc = { title, exercises, rest, reps, experience, equipment, about };
+
+    try {
+      await projectFirestore.collection("workouts").add(doc);
+      history.push("/Total_Titans/");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const handleAdd = (e) => {
@@ -65,14 +67,6 @@ export default function Create() {
       exerciseInput.current.focus();
     }
   };
-
-  // Redirect the user when we get a data response
-
-  useEffect(() => {
-    if (data) {
-      history.push("/Total_Titans/");
-    }
-  }, [data]);
 
   return (
     <div className={`create ${mode}`}>
