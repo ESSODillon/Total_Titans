@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import { useHistory } from "react-router-dom";
+import { useTheme } from "../../hooks/useTheme";
 
 // Styles
 import "./Create.css";
@@ -21,6 +22,8 @@ export default function Create() {
   const [newExercises, setNewExercises] = useState("");
   const [exercises, setExercises] = useState([]);
   const exerciseInput = useRef(null);
+
+  const { color } = useTheme();
 
   const { postData, data, error } = useFetch(
     "http://localhost:3000/workouts",
@@ -99,7 +102,11 @@ export default function Create() {
                   value={newEquipment}
                   ref={equipmentInput}
                 />
-                <button onClick={handleAdd} className="btn-equipment">
+                <button
+                  onClick={handleAdd}
+                  className="btn-equipment"
+                  style={{ background: color }}
+                >
                   add
                 </button>
               </div>
@@ -143,7 +150,11 @@ export default function Create() {
                   value={newExercises}
                   ref={exerciseInput}
                 />
-                <button onClick={handleAdd} className="btn-exercises">
+                <button
+                  onClick={handleAdd}
+                  className="btn-exercises"
+                  style={{ background: color }}
+                >
                   add
                 </button>
               </div>
@@ -178,7 +189,9 @@ export default function Create() {
 
         <br />
 
-        <button className="btn">submit</button>
+        <button className="btn" style={{ background: color }}>
+          submit
+        </button>
       </form>
     </div>
   );
