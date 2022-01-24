@@ -31,6 +31,11 @@ export default function Workout() {
       });
   }, [id]);
 
+  // Update functionality
+  const handleClick = () => {
+    projectFirestore.collection("workouts").doc(id).update({});
+  };
+
   return (
     <div className={`workout ${mode}`}>
       {error && <p className="error">{error}</p>}
@@ -57,6 +62,8 @@ export default function Workout() {
           <p className="reps">Reps: {workout.reps}</p>
           <p className="rest">Reps: {workout.rest}</p>
           <p className="about">{workout.about}</p>
+          {/* Update button */}
+          {/* <button onClick={handleClick}>Update me</button> */}
         </>
       )}
     </div>
