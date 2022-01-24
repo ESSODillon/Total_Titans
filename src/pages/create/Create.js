@@ -69,7 +69,7 @@ export default function Create() {
 
   useEffect(() => {
     if (data) {
-      history.push("/");
+      history.push("/Total_Titans/");
     }
   }, [data]);
 

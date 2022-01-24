@@ -13,11 +13,11 @@ export default function Navbar() {
   return (
     <div className="navbar" style={{ background: color }}>
       <nav>
-        <Link to="/" className="brand">
+        <Link to="/Total_Titans/" className="brand">
           <h1>Total Titans</h1>
         </Link>
         <Searchbar />
-        <Link to="/create">Create Workout</Link>
+        <Link to="/Total_Titans/create">Create Workout</Link>
       </nav>
     </div>
   );

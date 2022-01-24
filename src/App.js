@@ -18,16 +18,16 @@ function App() {
         <Navbar />
         <ThemeSelector />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Total_Titans/">
             <Home />
           </Route>
-          <Route exact path="/create">
+          <Route exact path="/Total_Titans/create">
             <Create />
           </Route>
-          <Route exact path="/search">
+          <Route exact path="/Total_Titans/search">
             <Search />
           </Route>
-          <Route exact path="/workouts/:id">
+          <Route exact path="/Total_Titans/workouts/:id">
             <Workout />
           </Route>
         </Switch>

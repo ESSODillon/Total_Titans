@@ -15,7 +15,7 @@ export default function WorkoutList({ workouts }) {
           <h3>{workout.title}</h3>
           <p>Difficulty level: {workout.experience}</p>
           <div>{workout.about.substring(0, 100)}...</div>
-          <Link to={`/workouts/${workout.id}`}>Read More</Link>
+          <Link to={`/Total_Titans/workouts/${workout.id}`}>Read More</Link>
         </div>
       ))}
     </div>

@@ -11,7 +11,7 @@ export default function Searchbar() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    history.push(`/search?q=${term}`);
+    history.push(`/Total_Titans/search?q=${term}`);
   };
 
   return (
