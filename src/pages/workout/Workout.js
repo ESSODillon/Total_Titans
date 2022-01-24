@@ -16,11 +16,11 @@ export default function Workout() {
 
   useEffect(() => {
     setIsPending(true);
-    projectFirestore
+
+    const unsub = projectFirestore
       .collection("workouts")
       .doc(id)
-      .get()
-      .then((doc) => {
+      .onSnapshot((doc) => {
         if (doc.exists) {
           setIsPending(false);
           setWorkout(doc.data());
@@ -29,6 +29,8 @@ export default function Workout() {
           setError("Could not find that workout");
         }
       });
+
+    return () => unsub();
   }, [id]);
 
   // Update functionality
