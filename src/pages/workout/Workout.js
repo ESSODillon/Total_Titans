@@ -1,16 +1,35 @@
-import React from "react";
 import { useParams } from "react-router-dom";
-import { useFetch } from "../../hooks/useFetch";
+import { useEffect, useState } from "react";
 import { useTheme } from "../../hooks/useTheme";
+import { projectFirestore } from "../../firebase/config";
 
 // Styles
 import "./Workout.css";
 
 export default function Workout() {
   const { id } = useParams();
-  const url = "http://localhost:3000/workouts/" + id;
-  const { data: workout, isPending, error } = useFetch(url);
   const { mode } = useTheme();
+
+  const [workout, setWorkout] = useState(null);
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    setIsPending(true);
+    projectFirestore
+      .collection("workouts")
+      .doc(id)
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          setIsPending(false);
+          setWorkout(doc.data());
+        } else {
+          setIsPending(false);
+          setError("Could not find that workout");
+        }
+      });
+  }, [id]);
 
   return (
     <div className={`workout ${mode}`}>
