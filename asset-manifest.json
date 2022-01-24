@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Total_Titans/static/css/main.c87fcc27.css",
-    "main.js": "/Total_Titans/static/js/main.9bfee03f.js",
+    "main.css": "/Total_Titans/static/css/main.30e6a8ea.css",
+    "main.js": "/Total_Titans/static/js/main.3c0a8b77.js",
     "index.html": "/Total_Titans/index.html",
-    "main.c87fcc27.css.map": "/Total_Titans/static/css/main.c87fcc27.css.map",
-    "main.9bfee03f.js.map": "/Total_Titans/static/js/main.9bfee03f.js.map"
+    "main.30e6a8ea.css.map": "/Total_Titans/static/css/main.30e6a8ea.css.map",
+    "main.3c0a8b77.js.map": "/Total_Titans/static/js/main.3c0a8b77.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87fcc27.css",
-    "static/js/main.9bfee03f.js"
+    "static/css/main.30e6a8ea.css",
+    "static/js/main.3c0a8b77.js"
   ]
 }
